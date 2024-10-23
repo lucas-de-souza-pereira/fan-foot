@@ -1,0 +1,165 @@
+
+*{
+    margin: 0;
+	padding: 0;
+}
+
+:root {
+    --primary-color : #D2B48C;
+    --secondary-color : #2E4A7F;
+    --tertiary-color : #228B22;
+    --primary-font-family : 'Manrope', sans-serif;
+}
+
+/*///////////// MISE EN PAGE DU HEADER ////////////////////////////////////*/
+
+header {
+    /* image banière */
+    background-image: url(images/bannière.png);
+    background-size: cover;
+    background-position: center; 
+    height: 150px;
+    /* flex pour position le nav bien au centre*/
+    display: flex;
+    align-items: center; 
+    justify-content: start;
+  
+}
+
+/* couleur du bandeau + congés sur angle + flex pour aligner image et nav */
+.header-nav{
+    /* couleur du bandeau et radius */
+    background-color: rgb(46, 74, 127,.8);
+    border-radius: 10px 60px 10px 60px;
+    /* position du bandeau */
+    margin-top: 1%; 
+    margin-bottom: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    /* taille du bandeau */
+    width: 100%;
+    /* flex du logo et du menu */
+    display: flex;
+    justify-content: space-around;
+ } 
+
+ /* proriété du logo et sa position par rapport 
+ au bandeau */
+.header-logo{
+   width: 80px;
+   padding-top: 8px;
+   padding-bottom: 5px;
+   margin-left: 60px;
+
+}
+
+.header-ul { 
+    /* flex du bloc nav (menu) */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none; 
+    }
+
+    /* style du texte du bandeau nav*/
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  font-family: var(--primary-font-family);
+  font-weight:medium;
+  
+
+}
+/* hover lors du passage sur menu */
+nav li:hover {
+    /* couleur a définir */
+    background-color: rgb(34, 139, 34,.6);
+    background-size:cover;
+    height: 70%;
+    border-radius: 10% 10%;
+    /* flex pour aller le texte verticalement */
+    display: flex;
+    align-items: center;
+  
+ 
+   
+} 
+
+
+/* paramétre du logo */
+.logo {
+    width : 80px;
+    height: 80px; 
+        } 
+
+
+
+
+
+
+
+
+
+    /*////////////////* MISE EN PAGE DU MAIN //////////////////*/
+/* 
+
+    body{
+        background-color: var(--primary-color);
+    }
+
+p{
+    color:#2E4A7F;
+    font-family: var(--primary-font-family);
+}
+
+ */
+
+
+
+/*         <img src="images/photo-header.jpg" alt="photo d'un massif" class="photo-header"/> */
+/* 
+.index-section {
+    height: 200px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    gap: 15px;
+    background-color: rgb(66, 66, 216);
+
+}
+
+
+.index-article{
+    background-color:rgb(52, 209, 114);
+    height: 200px;
+} */
+/* @media only screen and (min-width:1600px)
+{
+    .index-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;   
+        }
+}
+
+@media only screen and (min-width:768px) and (max-width:1599px)
+{
+    .index-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px; 
+        }
+}
+
+@media only screen and (max-width:767px)
+{ 
+    .index-section {
+        display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px; 
+    }
+} */

@@ -3,10 +3,12 @@
 
 <head>
     <meta charset="utf-8" >
-    <title>titre de site</title>
-    <link href="style.css" rel="stylesheet" >
+    <title>Rando-13</title>
+    <link href="fansite3.css" rel="stylesheet" >
+    <!-- <link href="reset.css" rel="stylesheet" > -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- si on veut utiliser un style de police venant de google -->
+    <!-- police manrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
@@ -14,31 +16,66 @@
 
 <body>
     <header>
-        <nav>
-            <img src="images/logo.png" alt="Logo" >
-            <a href="index.html">Accueil</a>
-            <a href="a-propos.html">À propos</a>
+        <nav class="header-nav">
+            <a href="index.html"> <img src="images/logo.png" alt="Logo" class="header-logo"></a>
+            <ul class="header-ul">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="actualité.html">Actualité</a></li>
+                <li><a href="conseil.html">Conseil</a></li>
+                <li><a href="evenement.html">Evenement</a></li>
+                <li><a href="renseignement.html">Renseignement</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        
-        <section>
+        <!-- section d'acroche -->
+        <section class="index-intro">
+            <h1>passionné de rando ?</h1>
+                
+            <p>si vous être passioné de rando vous êtes au bonne endroit</p>
         </section>
+
+<!-- sections avec articles actualité, conseil et évenement -->
+        <section class="index-section">
+            <!-- article actualité -->
+            <article class="index-article">
+                <h2>assention de la sainte baume</h2>
+                <p>inox à monté l'imalaya ? pas besoin d'aller aussi loin, découvrez la sainte baume !</p>
+            </article>
+            <!-- article conseil -->
+            <article class="index-article">
+                <h2>5 bonnes pratiques !</h2>
+                <p>la rando peut être dangereuse, voici quelques conseil </p>
+            </article>
+            <!-- article prochain évenement -->
+            <article class="index-article">
+                <h2>Les rendez-vous à retenir</h2>
+                <p>envie de retrouver un groupe ? le prochain GR est organisé à...</p>
+            </article>
+
+        </section>
+
+<section>
+    <p>blblbllzadjopdjzaopdazj
+        djzaijdzaipdjaidjza
+    </p>
+</section>
 
     </main>
 
 
     <footer>
-        <img src="images/logo.png" alt="" >
-        <a target="_blank" href="https://twitter.com/" class="lien-icone">
-            <img src="images/twitter.png" alt="Logo Twitter" >
-        </a>
-        <a target="_blank" href="https://www.instagram.com/" class="lien-icone">
-            <img src="images/instagram.png" alt="Logo Instagram" >
-        </a>
+       
+            <a href="index.html"> <img src="images/logo.png" alt="Logo" class="logo"></a>
+            <a href="index.html">Accueil</a>
+            <a href="actualité.html">Actualité</a>
+            <a href="conseil.html">Conseil</a>
+            <a href="evenement.html">Evenement</a>
+            <a href="renseignement.html">Renseignement</a>
+       
     </footer>
 
 </body>
 
-</html>
+</html> 
