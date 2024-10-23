@@ -30,7 +30,7 @@ header {
 .header-nav{
     /* couleur du bandeau et radius */
     background-color: rgb(46, 74, 127,.8);
-    border-radius: 10px 60px 10px 60px;
+    border-radius: 10px 40px 10px 40px;
     /* position du bandeau */
     margin-top: 1%; 
     margin-bottom: 1%;
@@ -38,18 +38,21 @@ header {
     margin-right: 2%;
     /* taille du bandeau */
     width: 100%;
+    max-width: 100%;
     /* flex du logo et du menu */
     display: flex;
     justify-content: space-around;
+    
  } 
 
  /* proriété du logo et sa position par rapport 
  au bandeau */
 .header-logo{
-   width: 80px;
+   width: 4em;
    padding-top: 8px;
    padding-bottom: 5px;
    margin-left: 60px;
+   border-radius: 25px;
 
 }
 
@@ -57,14 +60,18 @@ header {
     /* flex du bloc nav (menu) */
     display: flex;
     flex-direction: row;
+    /* wrap pour le menu */
+    flex-wrap: wrap;
+    
     align-items: center;
     justify-content: space-around;
     width: 100%;
     list-style: none; 
     }
 
-    /* style du texte du bandeau nav*/
+   
 nav a {
+     /* style du texte du bandeau nav*/
   text-decoration: none;
   color: white;
   font-size: 1.5em;
@@ -82,40 +89,24 @@ nav li:hover {
     border-radius: 10% 10%;
     /* flex pour aller le texte verticalement */
     display: flex;
-    align-items: center;
-  
- 
-   
+    align-items: center; 
+} 
+
+/* hover pour le logo header */
+.header-logo:hover{
+    opacity: .8;
+}
+
+
+    /*//////////////// MISE EN PAGE DU MAIN //////////////////*/
+
+body{
+    background-color: var(--primary-color);
 } 
 
 
-/* paramétre du logo */
-.logo {
-    width : 80px;
-    height: 80px; 
-        } 
 
 
-
-
-
-
-
-
-
-    /*////////////////* MISE EN PAGE DU MAIN //////////////////*/
-/* 
-
-    body{
-        background-color: var(--primary-color);
-    }
-
-p{
-    color:#2E4A7F;
-    font-family: var(--primary-font-family);
-}
-
- */
 
 
 
@@ -163,3 +154,33 @@ p{
     gap: 10px; 
     }
 } */
+
+
+/* paramétre du logo */
+
+
+/*/////////////// MEDIA QUERIES //////////////*/
+
+/* media queries pour iphone 12 PRO */
+
+
+@media only screen and (max-width:390px) {
+
+    
+    .header-logo{
+        /* décalage du logo */
+    margin-left: 4%;
+    }
+
+    .header-nav{
+        /* modif radius pour affichage mobile*/
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    nav a {
+        /* style du texte du bandeau nav*/
+    font-size: 1.2em;
+    font-family: var(--primary-font-family);
+    font-weight:medium;
+    }
+}
