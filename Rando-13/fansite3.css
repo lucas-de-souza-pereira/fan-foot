@@ -124,6 +124,10 @@ p{
     font-family: var(--primary-font-family);
 }
 
+.p-bold{
+    font-weight: bold;
+}
+
 /*//// Mise en forme intro /////*/
 
 .index-intro{
@@ -233,53 +237,58 @@ footer{
 .footer-ul a:hover{
     color: white;
 }
-/*         <img src="images/photo-header.jpg" alt="photo d'un massif" class="photo-header"/> */
-/* 
-.index-section {
-    height: 200px;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 300px 300px;
-    gap: 15px;
-    background-color: rgb(66, 66, 216);
+
+/* ////// MISE EN PAGE ARTICLES ACTUALITE ET LIEUX */
+
+.article-news{
+    display: flex;
+    flex-direction: row; 
+    margin: 2%;
+    border-top: #2E4A7F 1px solid;
+    border-bottom: #2E4A7F 1px solid;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.article-news img{
+    width: 40%;
+    height: 40%;
+}
+
+.article-news h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
-
-.index-article{
-    background-color:rgb(52, 209, 114);
-    height: 200px;
-} */
-/* @media only screen and (min-width:1600px)
-{
-    .index-section {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px;   
-        }
+.article-news p{
+    margin: 2%;
 }
 
-@media only screen and (min-width:768px) and (max-width:1599px)
-{
-    .index-section {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 10px; 
-        }
+.article-news a{
+    margin-left: 2%;
+    text-decoration: none;
+    color: #2E4A7F;
+    font-style: var(--primary-font-family);
+    font-style: italic;
 }
 
-@media only screen and (max-width:767px)
-{ 
-    .index-section {
-        display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 10px; 
-    }
-} */
+/* pour pouvoir mettre l'image sur le côté en dessous de 1880 */
+@media only screen and (max-width:1880px){
 
+.article-news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
 
-/* paramétre du logo */
+.article-news img{
+width: 90%;
+}
+}
+
 
 
 /*/////////////// MEDIA QUERIES //////////////*/
@@ -313,6 +322,8 @@ footer{
 
  
 }
+
+/* media queries pour forcer l'affiche sur écran de moins de 375px */
 
 @media only screen and (max-width:375px){
 
