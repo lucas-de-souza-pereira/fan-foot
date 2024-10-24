@@ -145,14 +145,20 @@ p{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-left: 1%;
     gap: 2em;
     max-width: 70%;
 }
 
 .index-article{
     background-color: #D2B48C ;
+    max-width: 90%;
+    
 }
 
+.index-img {
+    width: 23em;
+}
 
 footer{
     background-color: #D2B48C;
