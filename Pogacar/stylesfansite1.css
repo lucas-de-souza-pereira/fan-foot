@@ -1,0 +1,124 @@
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    margin: 0px;
+    padding: 0px;
+ }  
+ /* nav{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(243, 221, 200);
+    
+ }
+ 
+ nav ul{
+    display: flex;
+    flex-direction: row; 
+    list-style: none;
+   
+ } */
+/*  
+ nav a{
+    padding: 20px 30px;
+    color: hsl(69, 57%, 48%);
+    text-decoration:none;
+ }
+
+ a:hover{
+    color:red;
+ }
+.logo{
+   
+
+} */
+nav ul {
+   list-style-type: none;
+   margin:100px;
+   padding: 100px;
+   display: flex;
+   align-items: center;
+   background-color: #333;
+}
+
+nav ul li {
+   margin-right: 20px;
+}
+
+nav ul li a {
+   color: white;
+   text-decoration: none;
+   padding: 10px;
+}
+
+nav ul li a:hover {
+   background-color: #555;
+}
+
+.logo {
+   height: 40px; /* Ajustez la hauteur du logo */
+   width: auto;  /* Conserve les proportions de l'image */
+}
+
+nav ul li:first-child {
+   margin-right: auto; /* Met le logo à gauche et espace les autres éléments */
+}
+
+* Conteneur des articles */
+
+
+
+.articles {
+    display: flex; /* Place les articles en ligne */
+    justify-content: space-between; /* Espace entre les articles */
+    gap: 20px; /* Espace entre chaque article */
+    background-color: #b01010; /* Couleur de fond */
+} 
+
+
+/* Style pour chaque article */
+section {
+   display: flex;
+    background-color: white; /* Fond blanc pour chaque article */
+    border: 1px solid #ddd; /* Bordure légère */
+    border-radius: 8px; /* Bords arrondis */
+    /* Chaque article occupe 30% de la largeur */
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Effet d'ombre */
+}
+
+.article1 img {
+   width: 30px;
+   height: 30px;
+}
+
+.article2 img {
+   width:100%;
+}
+section h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+section p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Style pour la section des commentaires */
+.commentaires {
+    margin-top: 15px;
+    background-color: #f9f9f9; /* Fond gris clair pour les commentaires */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.commentaires h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.commentaires p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #666;
+}
