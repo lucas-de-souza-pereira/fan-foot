@@ -5,10 +5,12 @@
 }
 
 :root {
-    --primary-color : #D2B48C;
+    --primary-color : antiquewhite;
     --secondary-color : #2E4A7F;
     --tertiary-color : #228B22;
     --primary-font-family : 'Manrope', sans-serif;
+    /* #D2B48C */
+
 }
 
 /*///////////// MISE EN PAGE DU HEADER ////////////////////////////////////*/
@@ -100,12 +102,61 @@ nav li:hover {
 
     /*//////////////// MISE EN PAGE DU MAIN //////////////////*/
 
+/*/// mise en forme générale /////*/
+
 body{
     background-color: var(--primary-color);
 } 
 
+h1{
+    margin-left: 5%;
+    padding-top: 1%;
+    font-family: var(--primary-font-family);
+}
+
+h2{
+    margin-left: 5%;
+    padding-top: 2%;
+}
+
+p{
+    font-family: var(--primary-font-family);
+}
+
+/*//// Mise en forme intro /////*/
+
+.index-intro{
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.index-intro p {
+    width: 80%;
+    padding-top: 1%;
+    text-align: justify;
+    margin: auto;
+    margin-bottom: 1%;
+}
+
+/*//// Mise en forme index articles /////*/
+
+.index-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2em;
+    max-width: 70%;
+}
+
+.index-article{
+    background-color: #D2B48C ;
+}
 
 
+footer{
+    background-color: #D2B48C;
+}
 
 
 
