@@ -1,0 +1,121 @@
+@media only screen and (max-width: 320px)and (max-width:680px){
+
+}
+@media only screen and (max-width: 680px)and (max-width:980px){
+
+}
+@media only screen and  (max-width: 980px)and (max-width:1280px){
+
+}
+@media only screen and  (max-width: 1280px)and (max-width:1580px){
+
+}
+@media only screen and  (max-width: 1580px)and (max-width:1880px){
+
+}
+
+ul img{
+    border: solid;
+    height: 60px;
+    width: 65px;
+}
+/*logo inserer dans la liste de toute les page html*/
+nav{
+    border-top: solid;
+    background-image: url(image/team.png);
+    height: 100px;
+    
+}
+/* navigation de toute mes pages */
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+/* systeme de listage general */
+a{
+    text-decoration: none;
+}
+/*navigation générale*/
+
+.actualite{
+    display: flex;
+    grid-template-columns: repeat(3,1fr);
+}
+.titre2{
+    padding-top: 30px;
+
+}
+/*titre principale de la page fansite2*/
+
+.actu1 img{
+    height: 200px;
+    width: 250px;
+}
+.actu1_1{
+    border: solid;
+    margin-left: 60px;
+}
+
+.flex_container{
+    display: flex;
+    justify-content: space-between;
+}
+.art1{
+    display: flex;
+    flex-direction:column;
+    
+    border: solid;
+
+}
+.art1 img{
+    border: solid;
+    height: 500px;
+    width: 500px;
+}
+/* page fansite2*/
+.descript img{
+    border: solid;
+    width: 600px;
+    height: 500px;
+}
+/*page accueil balise contenant mon image*/
+.descript{
+    background-color: rgba(0, 0, 0, 0.5); 
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+/*balise contenant mon image et mon text*/
+.text1{
+    border: solid;
+    margin-left: 20px;
+}
+/* titre,image et description de la page accueil */
+
+.article1 img{
+    border: solid;
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+}
+/* dimension de l'image */
+.cup1{
+    display: flex;
+    justify-content: space-between;
+}
+.cup1 img{
+    width: 300px;
+    height: 220px;
+}
+/* flex des 4première coupes */
+.cup2{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.cup2 img{
+    width: 300px;
+    height: 220px;
+}
+
