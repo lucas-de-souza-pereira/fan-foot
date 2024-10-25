@@ -85,10 +85,12 @@ header {
 /* hover lors du passage sur menu */
 .header-nav li:hover {
     /* couleur a définir */
-    background-color: rgba(39, 171, 197, 0.6);
+    background-color: rgba(104, 128, 123, 0.6);
     background-size:cover;
     height: 70%;
     border-radius: 10% 10%;
+    padding-left: 1%;
+    padding-right: 1%;
     /* flex pour aller le texte verticalement */
     display: flex;
     align-items: center; 
@@ -173,10 +175,6 @@ p{
     display: flex;
     align-items: center;
 }
-
-/* .index-article p{
-    height: 4em;
-} */
 
 .index-article a{
 margin-top: 1%;

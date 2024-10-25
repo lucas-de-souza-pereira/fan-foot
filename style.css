@@ -1,0 +1,65 @@
+
+body{
+    background-color: beige;
+    }
+
+h1{
+    text-align: center;
+    background-color: pink;
+}
+
+.index-intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2%;
+    border: 1px solid blue;
+}
+
+.index-sec-fansite{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    margin-right: 2%;
+    margin-left: 2%;
+    gap:.5em;
+    border: 1px black solid;
+}
+
+.index-art-fansite{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: antiquewhite;
+
+    padding-right: 1%;
+    padding-left: 1% ;
+    border: 1px red solid;
+}
+
+img{
+    width: 20em;
+    height: 15em;
+}
+
+footer{
+    background-color: pink;
+}
+
+@media only screen and (max-width:1160px) {
+
+    .index-sec-fansite{
+        display: flex;
+        flex-direction: column;
+   
+        margin-right: 2%;
+        margin-left: 2%;
+        gap:.5em;
+        border: 1px yellow solid;
+    }
+
+}
