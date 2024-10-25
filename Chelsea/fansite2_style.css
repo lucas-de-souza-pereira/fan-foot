@@ -13,7 +13,24 @@
 @media only screen and  (max-width: 1580px)and (max-width:1880px){
 
 }
+p{
+    color: white;
+}
+h2{
+    color: white;
+}
+h3{
+    color: white;
+}
+h4{
+    color: white;
+}
 
+body{
+    background-image: url('image/fondchelsea.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
 ul img{
     border: solid;
     height: 60px;
@@ -23,9 +40,10 @@ ul img{
 nav{
     border-top: solid;
     background-image: url(image/team.png);
-    height: 100px;
-    
+    max-width: 100%; /* Assure que l'image ne dépasse pas la largeur du nav */
+    height: auto; /* Maintient le ratio de l'image */
 }
+
 /* navigation de toute mes pages */
 nav ul{
     display: flex;
@@ -38,23 +56,21 @@ a{
 }
 /*navigation générale*/
 
-.actualite{
-    display: flex;
-    grid-template-columns: repeat(3,1fr);
-}
+
 .titre2{
     padding-top: 30px;
 
 }
 /*titre principale de la page fansite2*/
-
-.actu1 img{
-    height: 200px;
-    width: 250px;
+.article1text{
+    
 }
-.actu1_1{
-    border: solid;
-    margin-left: 60px;
+.article2text{
+    border-right: solid;
+    border-left: solid;
+}
+.article3text{
+    
 }
 
 .flex_container{
@@ -65,57 +81,151 @@ a{
     display: flex;
     flex-direction:column;
     
-    border: solid;
+    
 
 }
 .art1 img{
+    border: solid;
+    border-right: none;
+    height: 500px;
+    width: 500px;
+}
+.art2 img{
+    border: solid;
+    border-right: none;
+    height: 500px;
+    width: 500px;
+}
+.art3 img{
     border: solid;
     height: 500px;
     width: 500px;
 }
 /* page fansite2*/
 .descript img{
-    border: solid;
-    width: 600px;
-    height: 500px;
+    
+    width: 500px;
+    height: 300px;
+    margin-left: 455px;
+    margin-top: 20px;
 }
 /*page accueil balise contenant mon image*/
 .descript{
-    background-color: rgba(0, 0, 0, 0.5); 
-    margin-top: 30px;
+    
+    /* margin-top: 30px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row; */
 }
 /*balise contenant mon image et mon text*/
 .text1{
-    border: solid;
+    background-color: rgba(0, 0, 0, 0.5); 
     margin-left: 20px;
+    border: solid;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.article1text{
+    background-color: rgba(0, 0, 0, 0.5); 
+    border: solid;
+    border-top-right-radius: 10px;
+    border-right: none;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: left;
+    padding-bottom: 55px;
+}
+.article2text{
+    background-color: rgba(0, 0, 0, 0.5); 
+    border: solid;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+.article3text{
+    background-color: rgba(0, 0, 0, 0.5); 
+    border: solid;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-left: none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-bottom: 92px;
 }
 /* titre,image et description de la page accueil */
 
 .article1 img{
     border: solid;
+    border-right: none;
     margin-top: 20px;
     width: 200px;
     height: 200px;
 }
-/* dimension de l'image */
+.article2 img{
+    
+    border: solid;
+    border-right: none;
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.article3 img{
+    
+    border: solid;
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+}
+/* dimension de l'image pa ge de réalisation */
 .cup1{
+    
     display: flex;
     justify-content: space-between;
 }
+/* bloc qui englobe 2 bloc distinct qui contint chacun 1 image et 1 titre */
 .cup1 img{
-    width: 300px;
-    height: 220px;
+    width: 650px;
+    height: 500px;
+    border: solid;
+    box-shadow: inset;
+    box-shadow: 5px 5px 5px blue;
 }
 /* flex des 4première coupes */
 .cup2{
     display: flex;
     justify-content: space-between;
     
+
+    
 }
+/* bloc qui englobe 2 bloc distinct qui contint chacun 1 image et 1 titre */
 .cup2 img{
-    width: 300px;
-    height: 220px;
+    width: 650px;
+    height: 500px;
+    border: solid;
+    box-shadow: inset;
+    box-shadow: 5px 5px 5px blue;
 }
+.highlight {
+    font-weight: bold;
+}
+.photopalmer {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.photopalmer img{
+    width: 300px;
+    height: 400px;
+}
+.photopalmer iframe{
+    margin-top: 60px;
+    margin-right: 50px;
+}
+
 
