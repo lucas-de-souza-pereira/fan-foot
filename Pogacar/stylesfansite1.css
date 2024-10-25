@@ -86,12 +86,13 @@ section {
 }
 
 .article1 img {
-   width: 30px;
-   height: 30px;
+   width: 100%; /* Image s'adapte à la largeur de l'article */
+   height: 200px; /* Fixe une hauteur pour toutes les images */
 }
 
 .article2 img {
-   width:100%;
+   width: 100%; /* Image s'adapte à la largeur de l'article */
+   height: 200px; /* Fixe une hauteur pour toutes les images */
 }
 section h2 {
     font-size: 20px;
