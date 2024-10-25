@@ -62,46 +62,45 @@ a{
 
 }
 /*titre principale de la page fansite2*/
-.article1text{
-    
-}
+
 .article2text{
     border-right: solid;
     border-left: solid;
 }
-.article3text{
-    
-}
+
 
 .flex_container{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    gap: 5px;
 }
+/* flex de l'article qui est sous image de drogba */
 .art1{
     display: flex;
     flex-direction:column;
+    justify-content: left;
     
-    
-
 }
 .art1 img{
     border: solid;
-    border-right: none;
-    height: 500px;
-    width: 500px;
+    
+    height: 300px;
+    width: 400px;
 }
 .art2 img{
     border: solid;
-    border-right: none;
-    height: 500px;
-    width: 500px;
+    
+    height: 300px;
+    width: 400px;
 }
 .art3 img{
     border: solid;
-    height: 500px;
-    width: 500px;
+    height: 300px;
+    width: 400px;
 }
 /* page fansite2*/
+
 .descript img{
     
     width: 500px;
@@ -226,6 +225,12 @@ a{
 .photopalmer iframe{
     margin-top: 60px;
     margin-right: 50px;
+}
+li{
+    list-style: none;
+}
+.nomprenom{
+    border: 1px solid;
 }
 
 
