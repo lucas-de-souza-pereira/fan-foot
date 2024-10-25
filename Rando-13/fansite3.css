@@ -72,7 +72,7 @@ header {
     }
 
    
-nav a {
+.header-nav a {
      /* style du texte du bandeau nav*/
   text-decoration: none;
   color: white;
@@ -83,12 +83,14 @@ nav a {
 
 }
 /* hover lors du passage sur menu */
-nav li:hover {
+.header-nav li:hover {
     /* couleur a définir */
-    background-color: rgb(34, 139, 34,.6);
+    background-color: rgba(104, 128, 123, 0.6);
     background-size:cover;
     height: 70%;
     border-radius: 10% 10%;
+    padding-left: 1%;
+    padding-right: 1%;
     /* flex pour aller le texte verticalement */
     display: flex;
     align-items: center; 
@@ -117,10 +119,15 @@ h1{
 h2{
     margin-left: 5%;
     padding-top: 2%;
+    font-family: var(--primary-font-family);
 }
 
 p{
     font-family: var(--primary-font-family);
+}
+
+.p-bold{
+    font-weight: bold;
 }
 
 /*//// Mise en forme intro /////*/
@@ -145,75 +152,141 @@ p{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-left: 1%;
     gap: 2em;
-    max-width: 70%;
 }
 
+/* paramétrage des blocs de la page d'acceuil */
 .index-article{
     background-color: #D2B48C ;
-    max-width: 90%;
-    
+    text-align: justify;
+    width: 23em;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    margin-bottom: 2%;
+    border-radius: 1% 1%;
+    padding-left: 1%;
+    padding-right: 1%
 }
+
+.index-article h2{
+    margin-left: 0;
+    height: 2.7em;
+    display: flex;
+    align-items: center;
+}
+
+.index-article a{
+margin-top: 1%;
+margin-bottom: 1%;
+font-family: var(--primary-font-family);
+text-decoration: none;
+color: rgb(52, 106, 255);
+}
+
+.index-article a:hover{
+text-decoration: underline;
+opacity: 0.9;
+}
+
 
 .index-img {
     width: 23em;
+    height: 14em;
+    border: black 1px solid;
 }
+
+/*////// MISE EN PAGE FOOTER ///////*/
 
 footer{
     background-color: #D2B48C;
 }
 
-
-
-
-/*         <img src="images/photo-header.jpg" alt="photo d'un massif" class="photo-header"/> */
-/* 
-.index-section {
-    height: 200px;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 300px 300px;
-    gap: 15px;
-    background-color: rgb(66, 66, 216);
+.footer-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    height:  5em;
 
 }
 
 
-.index-article{
-    background-color:rgb(52, 209, 114);
-    height: 200px;
-} */
-/* @media only screen and (min-width:1600px)
-{
-    .index-section {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px;   
-        }
+.footer-ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+    width: 80%;
 }
 
-@media only screen and (min-width:768px) and (max-width:1599px)
-{
-    .index-section {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 10px; 
-        }
+.footer-ul a{
+    text-decoration: none;
+    font-family: var(--primary-font-family);
+    color: var(--secondary-color);
+    font-size: 1.5em;
+    font-weight:medium;
+    margin-left: .4em;
+    margin-right: .4em;
 }
 
-@media only screen and (max-width:767px)
-{ 
-    .index-section {
-        display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 10px; 
-    }
-} */
+.footer-ul a:hover{
+    color: white;
+}
 
+/* ////// MISE EN PAGE ARTICLES ACTUALITE ET LIEUX */
 
-/* paramétre du logo */
+.article-news{
+    display: flex;
+    flex-direction: row; 
+    margin: 2%;
+    border-top: #2E4A7F 1px solid;
+    border-bottom: #2E4A7F 1px solid;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.article-news img{
+    width: 40%;
+    height: 40%;
+}
+
+.article-news h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.article-news p{
+    margin: 2%;
+}
+
+.article-news a{
+    margin-left: 2%;
+    text-decoration: none;
+    color: #2E4A7F;
+    font-style: var(--primary-font-family);
+    font-style: italic;
+}
+
+/* pour pouvoir mettre l'image sur le côté en dessous de 1880 */
+@media only screen and (max-width:1880px){
+
+.article-news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.article-news img{
+width: 90%;
+}
+}
+
 
 
 /*/////////////// MEDIA QUERIES //////////////*/
@@ -234,10 +307,27 @@ footer{
         border-radius: 10px 10px 10px 10px;
     }
 
-    nav a {
+    .header-nav a {
         /* style du texte du bandeau nav*/
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-family: var(--primary-font-family);
     font-weight:medium;
     }
+
+    .footer-nav a{
+        font-size: 1.2em;
+    }
+
+ 
+}
+
+/* media queries pour forcer l'affiche sur écran de moins de 375px */
+
+@media only screen and (max-width:375px){
+
+    body{
+        width: 23.75em;
+    }
+
+
 }
