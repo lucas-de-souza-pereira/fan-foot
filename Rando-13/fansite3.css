@@ -79,6 +79,7 @@ header {
   font-size: 1.5em;
   font-family: var(--primary-font-family);
   font-weight:medium;
+ 
   
 
 }
@@ -89,8 +90,7 @@ header {
     background-size:cover;
     height: 70%;
     border-radius: 10% 10%;
-    padding-left: 1%;
-    padding-right: 1%;
+    
     /* flex pour aller le texte verticalement */
     display: flex;
     align-items: center; 
@@ -287,7 +287,55 @@ width: 90%;
 }
 }
 
+/*///////////// MISE EN PAGE CONTACT ////////////*/
 
+fieldset{
+    background-color: rgb(236, 208, 123);
+    width: 90%;
+    margin-left: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+
+legend{
+    background-color: aliceblue;
+    font-family: var(--primary-font-family);
+    padding: .2em;
+}
+
+label{
+    font-family: var(--primary-font-family);
+    margin-right: 0.4em;
+    margin-left: 0.4em;
+}
+
+.contact-perso{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .5em;
+}
+
+.contact-exp{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: .5em;
+}
+
+textarea{
+    width: 30em;
+    height: 8em;
+    margin-top: .5em;
+}
+
+.contact-bouton{
+    margin-left: 2%;
+    margin-bottom: 1%;
+    width: 8em;
+    height: 3em;
+}
 
 /*/////////////// MEDIA QUERIES //////////////*/
 
