@@ -238,9 +238,10 @@ footer{
 
 /* ////// MISE EN PAGE ARTICLES ACTUALITE ET LIEUX */
 
-.article-news{
+.article-news, .ev-passe{
     display: flex;
     flex-direction: row; 
+    align-items: center;
     margin: 2%;
     border-top: #2E4A7F 1px solid;
     border-bottom: #2E4A7F 1px solid;
@@ -248,41 +249,54 @@ footer{
     padding-bottom: 1%;
 }
 
-.article-news img{
-    width: 40%;
+.article-news img, .ev-passe img{
+    width: 30%;
     height: 40%;
+    max-width: max-content;
+    max-height: 35em;
+
 }
 
-.article-news h2{
+.article-news h2, .ev-passe h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
-.article-news p{
+.article-news h3, .ev-passe h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 0.3%;
+    font-family: var(--primary-font-family);
+}
+
+.article-news p, .ev-passe p{
     margin: 2%;
 }
 
-.article-news a{
+.article-news a, .ev-passe a{
     margin-left: 2%;
     text-decoration: none;
     color: #2E4A7F;
     font-style: var(--primary-font-family);
     font-style: italic;
+    font-size: 1.1em;
+    font-weight: 500;
 }
 
 /* pour pouvoir mettre l'image sur le côté en dessous de 1880 */
 @media only screen and (max-width:1880px){
 
-.article-news{
+.article-news,.ev-passe{
     display: flex;
     flex-direction: column;
     align-items: center;
     
 }
 
-.article-news img{
+.article-news img, .ev-passe img{
 width: 90%;
 }
 }
@@ -357,7 +371,7 @@ textarea{
 
     .header-nav a {
         /* style du texte du bandeau nav*/
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-family: var(--primary-font-family);
     font-weight:medium;
     }
