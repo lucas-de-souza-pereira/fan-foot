@@ -6,6 +6,17 @@ body{
 h1{
     text-align: center;
     background-color: pink;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .index-intro{
@@ -13,7 +24,7 @@ h1{
     flex-direction: column;
     align-items: center;
     margin-bottom: 2%;
-    border: 1px solid blue;
+
 }
 
 .index-sec-fansite{
@@ -25,7 +36,7 @@ h1{
     margin-right: 2%;
     margin-left: 2%;
     gap:.5em;
-    border: 1px black solid;
+    
 }
 
 .index-art-fansite{
@@ -34,16 +45,18 @@ h1{
     align-items: center;
     justify-content: center;
     
-    background-color: antiquewhite;
-
+    background-color: rgb(253, 232, 205);
+    border-radius: 10% 10%;
     padding-right: 1%;
     padding-left: 1% ;
-    border: 1px red solid;
+    border: 1px solid brown;
+    
 }
 
 img{
     width: 20em;
     height: 15em;
+    margin-bottom: 2em;
 }
 
 footer{
