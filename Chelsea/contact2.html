@@ -24,32 +24,41 @@
     </header>
 </body>
     <main>
-        <form action="" method="post">
-            <ul>
-                <div class="nomprenom">
-                    <!-- division pour aligner le nom et le prénom sur la même colonne -->
-                    <li>
-                        <label for="prenom"> Prenom</label>
-                    </li>
-                        <input type="text" name="prenom" id="prenom">
-                    <div class="name">
-                    <!-- bloc qui contient uniquement le name -->
+        <div class="form-container">
+            <h2>Formulaire de Contact</h2>
+            <form action="submit.php" method="post">
+                <div class="formulaire">
+                    <ul>
+                        
                         <li>
-                            <label for="prenom"> Name</label>
+                            <p class="formcolor">Nom</p>  
+                            <label for="name"></label>
+                            <input type="text" id="name" name="name" required>
+                        
+                            <p class="formcolor">Prenom</p>
+                            <label for="email"></label>
+                            <input type="text" id="prenom" name="prenom" required>
+                            
+                        </li>  
+                        
+                        <li>
+                            <p class="formcolor">email</p>
+                            <label for="email"></label>
+                            <input type="email" id="email" name="email" required>
                         </li>
-                        <input type="text" name="name" id="name">
-                    </div>
-                </div>
-                <li>
-                    <label for="prenom"> Mail</label>
-                </li>
-                <input type="text" name="Mail" id="Mail">
-                <li>
-                    <label for="prenom">Ecris nous partage ta passion</label>
-                </li>
-                <input type="text" name="prenom" id="prenom">
-            </ul>    
-        </form>
+                        
+                        
+                        <li>
+                            <p class="formcolor">Message</p>
+                            <label for="message"></label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </li>
+                           
+                            <button type="submit">Envoyer</button>
+                    </ul>
+                </div>            
+            </form>
+        
     </main>
     <footer>
         <nav>
