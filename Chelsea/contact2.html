@@ -24,32 +24,66 @@
     </header>
 </body>
     <main>
-        <form action="" method="post">
-            <ul>
-                <div class="nomprenom">
-                    <!-- division pour aligner le nom et le prénom sur la même colonne -->
-                    <li>
-                        <label for="prenom"> Prenom</label>
-                    </li>
-                        <input type="text" name="prenom" id="prenom">
-                    <div class="name">
-                    <!-- bloc qui contient uniquement le name -->
-                        <li>
-                            <label for="prenom"> Name</label>
-                        </li>
-                        <input type="text" name="name" id="name">
+        <section>
+
+            <form method="get" action="">
+            
+                <fieldset class="contact-perso">
+                    <p><legend>Vos coordonées</legend></p>
+                    <div>
+                    <p>Votre prénom</p>
+                    <input type="text" name="prenom" id="prenom" placeholder="Ecrivez ici" autofocus>
                     </div>
-                </div>
-                <li>
-                    <label for="prenom"> Mail</label>
-                </li>
-                <input type="text" name="Mail" id="Mail">
-                <li>
-                    <label for="prenom">Ecris nous partage ta passion</label>
-                </li>
-                <input type="text" name="prenom" id="prenom">
-            </ul>    
-        </form>
+            
+                    <div>
+                    <p>Votre Nom</p>
+                    <input type="text" name="nom" id="nom" placeholder="Ecrivez ici">
+                    </div>
+            
+                    <div>
+                    <p>Votre E-mail</p>
+                    <input type="email" name="email" id="email" placeholder="Ecrivez ici" size="30">
+                    </div>
+            
+                    <div>
+                    <p>Votre téléphone</p>
+                    <input type="tel" name="tel" id="tel" placeholder="Ecrivez ici">
+                    </div>
+            
+                </fieldset>
+            
+                <fieldset class="contact-exp">
+            
+                    <p><legend>Renseigner vos information pour nos détection</legend></p>
+                    
+                    <p class="contact-p">Genre</p>
+                    <p>
+                        <input type="radio" name="lvl" value="Masculin" id="Masculin"> <label for="Masculin">Masculin</label>
+                        <input type="radio" name="lvl" value="Feminin" id="Feminin"> <label for="Feminin">Feminin</label>
+                           
+                    </p>
+            
+                    <p>Catégorie d'âge pour nos détection</p>
+                    <p>
+                        <input type="radio" name="Catégorie" value="U13" id="U13"> <label for="U13">U13</label>
+                        <input type="radio" name="Catégorie" value="U14" id="U14"> <label for="U14">U14</label>
+                        <input type="radio" name="Catégorie" value="U15" id="U15"> <label for="U15">U15</label> 
+                        <input type="radio" name="Catégorie" value="U16" id="U16"> <label for="U16">U16</label> 
+                        <input type="radio" name="Catégorie" value="U17" id="U17"> <label for="U17">U17</label>    
+                    </p>
+            
+                    <p>
+                        <label for="ameliorer">Avez vous des coins sympa à partager ?</label><br>
+                        <textarea name="ameliorer" id="ameliorer"></textarea>
+                    </p>
+            
+                </fieldset>
+            
+                <input type="submit" value="Envoyer" class="contact-bouton">
+            
+            </form>
+            
+            </section>
     </main>
     <footer>
         <nav>

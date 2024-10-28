@@ -1,20 +1,71 @@
-@media only screen and (max-width: 320px)and (max-width:680px){
+@media only screen and (min-width: 320px)and (max-width:680px){ /* responsive téléphone*/
+
+
+    nav ul{
+        display: flex;
+        gap: 20px;
+        list-style: none;
+    }
+   
+
+  /* fermeture navigation générale les styles pour toute les page fin*/
+    
+   .descript{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+.text1{
+    margin-top: 20px;
+}
+
+    
+    .flex_container{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+    .descript img{
+        width: 50em;
+        height: 30em;
+        
+        
+    }
+    
+}
+@media only screen and (min-width: 680px)and (max-width:980px){/* responsive tablette*/
+    .flex_container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-right: 155em;
+        
+    }
+    .flex_container1{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: -500px;
+        margin-right: 155em;
+    }
 
 }
-@media only screen and (max-width: 680px)and (max-width:980px){
 
-}
-@media only screen and  (max-width: 980px)and (max-width:1280px){
+
+@media only screen and  (max-width: 980px)and (max-width:1280px){/* television*/
 
 }
 @media only screen and  (max-width: 1280px)and (max-width:1580px){
 
 }
 @media only screen and  (max-width: 1580px)and (max-width:1880px){
-
+/* ouverture navigation générale les styles pour toute les page début*/
 }
 p{
     color: white;
+    
 }
 h2{
     color: white;
@@ -23,6 +74,9 @@ h3{
     color: white;
 }
 h4{
+    color: white;
+}
+a{
     color: white;
 }
 
@@ -38,8 +92,9 @@ ul img{
 }
 /*logo inserer dans la liste de toute les page html*/
 nav{
-    border-top: solid;
-    background-image: url(image/team.png);
+    border:1px solid;
+    border-radius: 50px;
+    background-color: rgba(16, 43, 102, 0.862);
     max-width: 100%; /* Assure que l'image ne dépasse pas la largeur du nav */
     height: auto; /* Maintient le ratio de l'image */
 }
@@ -54,68 +109,118 @@ nav ul{
 a{
     text-decoration: none;
 }
-/*navigation générale*/
+/* fermeture navigation générale les styles pour toute les page fin*/
 
 
-.titre2{
-    padding-top: 30px;
-
-}
-/*titre principale de la page fansite2*/
-
-.article2text{
-    border-right: solid;
-    border-left: solid;
-}
 
 
+
+
+/* ouverture page fansite2 */
 .flex_container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    
+    
+    display:flex;
+    flex-direction:row;
+    margin-top: 100px;
+    gap: 5px;
+}
+.flex_container1{
+    margin-top: -100px;
+    margin-bottom: 50px;
+    display:flex;
+    flex-direction:row;
+    margin-top: 200px;
     gap: 5px;
 }
 /* flex de l'article qui est sous image de drogba */
 .art1{
+    border: solid;
     display: flex;
     flex-direction:column;
-    justify-content: left;
-    
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-right: 100px;   
 }
 .art1 img{
-    border: solid;
-    
     height: 300px;
     width: 400px;
+}
+.art2{
+    border: solid;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-right: 100px;
 }
 .art2 img{
-    border: solid;
-    
     height: 300px;
-    width: 400px;
+    width: 400px;   
+}
+.art3{
+    border: solid;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-right: 100px;
 }
 .art3 img{
-    border: solid;
     height: 300px;
     width: 400px;
 }
-/* page fansite2*/
-
-.descript img{
-    
-    width: 500px;
+.art4{
+    border: solid;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-right: 100px;
+}
+.art4 img{
     height: 300px;
-    margin-left: 455px;
+    width: 400px;
+}
+.art5{
+    border: solid;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-right: 100px;
+}
+.art5 img{
+    height: 300px;
+    width: 400px;
+}
+.art6{
+    border: solid;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-right: 100px;
+}
+.art6 img{
+    height: 300px;
+    width: 400px;
+}
+/* fermeture page fansite2*/
+
+
+
+/* ouverture du style pour ma page d'accueil */
+.descript img{
+    width: 700px;
+    height: 500px;
+    
     margin-top: 20px;
 }
-/*page accueil balise contenant mon image*/
+/*pour les modification de l'image de la description du foot a travers chelsea*/
+
 .descript{
-    
-    /* margin-top: 30px;
     display: flex;
-    flex-direction: row; */
+    flex-direction: row;
+    margin-top: 30px;
+    
+    
 }
-/*balise contenant mon image et mon text*/
+.contain{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    
+}
+
+/* flex qui englobe les les 3 article sous la description */
+/*balise contenant mon image et mon text page fansite*/
 .text1{
     background-color: rgba(0, 0, 0, 0.5); 
     margin-left: 20px;
@@ -127,60 +232,72 @@ a{
 }
 .article1text{
     background-color: rgba(0, 0, 0, 0.5); 
-    border: solid;
+    border:1px solid;
     border-top-right-radius: 10px;
-    border-right: none;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     text-align: left;
-    padding-bottom: 55px;
-}
-.article2text{
-    background-color: rgba(0, 0, 0, 0.5); 
-    border: solid;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    padding-bottom: 91px;
     
 }
-.article3text{
-    background-color: rgba(0, 0, 0, 0.5); 
-    border: solid;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-left: none;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    padding-bottom: 92px;
-}
-/* titre,image et description de la page accueil */
-
 .article1 img{
     border: solid;
     border-right: none;
     margin-top: 20px;
-    width: 200px;
+    width: 300px;
     height: 200px;
+    margin-left: 150px;
+}
+.article2{
+    
+}
+.article2text{
+    background-color: rgba(0, 0, 0, 0.5); 
+    border:1px solid;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-bottom: 55px;
+    
+    
 }
 .article2 img{
     
     border: solid;
     border-right: none;
     margin-top: 20px;
-    width: 200px;
+    width: 300px;
     height: 200px;
+    margin-left: 150px;
 }
-
+.article3text{
+    background-color: rgba(0, 0, 0, 0.5); 
+    border:1px solid;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-bottom: 18px;
+    
+        
+}
 .article3 img{
     
     border: solid;
     margin-top: 20px;
-    width: 200px;
+    width: 300px;
     height: 200px;
+    margin-left: 150px;
+    
 }
-/* dimension de l'image pa ge de réalisation */
+/* dimension des image de ma page d'accueil */
+/* Fermeture du style pour ma page d'accueil  */
+
+
+
+/*ouverture de ma page réalisation*/
 .cup1{
     
     display: flex;
@@ -188,6 +305,20 @@ a{
 }
 /* bloc qui englobe 2 bloc distinct qui contint chacun 1 image et 1 titre */
 .cup1 img{
+    width: 650px;
+    height: 500px;
+    border: solid;
+    box-shadow: inset;
+    box-shadow: 5px 5px 5px blue;
+}
+.cup1_1{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/* bloc qui englobe 2 bloc distinct qui contint chacun 1 image et 1 titre */
+.cup1_1 img{
     width: 650px;
     height: 500px;
     border: solid;
@@ -202,7 +333,7 @@ a{
 
     
 }
-/* bloc qui englobe 2 bloc distinct qui contint chacun 1 image et 1 titre */
+/* bloc qui englobe 2 bloc distinct qui contient chacun 1 image et 1 titre */
 .cup2 img{
     width: 650px;
     height: 500px;
@@ -210,6 +341,26 @@ a{
     box-shadow: inset;
     box-shadow: 5px 5px 5px blue;
 }
+/*fermeture de ma page realisation*/
+.cup2_2{
+    display: flex;
+    justify-content: space-between;
+    
+
+    
+}
+/* bloc qui englobe 2 bloc distinct qui contient chacun 1 image et 1 titre */
+.cup2_2 img{
+    width: 650px;
+    height: 500px;
+    border: solid;
+    box-shadow: inset;
+    box-shadow: 5px 5px 5px blue;
+}
+/*fermeture de ma page realisation*/
+
+
+/* ouvertur de ma page photo  */
 .highlight {
     font-weight: bold;
 }
@@ -226,10 +377,34 @@ a{
     margin-top: 60px;
     margin-right: 50px;
 }
+
+
+
+/* ouverture de ma page formulaire de contact */
+.contact-perso{
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border:1px solid;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.contact-exp{
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border:1px solid;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
 li{
     list-style: none;
 }
-.nomprenom{
+.prenom{
+    display: flex;
+    justify-content: space-between;
     border: 1px solid;
 }
 
